@@ -5,4 +5,15 @@
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc 
 
+    ~/.config/sxhkd/sxhkdrc: sxhkdrc
+    ~/.config/bspwm/bspwmrc: bspwm/bspwmrc 
+    ~/.config/bspwm/picom.conf: bspwm/picom.conf
+    ~/.config/bspwm/bin: bspwm/bin
+    ~/.config/bspwm/themes: bspwm/themes
+    ~/.config/bspwm/rofi/bin: bspwm/rofi/bin
+    ~/.config/bspwm/rofi/themes: bspwm/rofi/themes
+    ~/.config/bspwm/polybar/colors: bspwm/polybar/colors
+    ~/.config/bspwm/polybar/config: bspwm/polybar/config
+    ~/.config/bspwm/polybar/modules: bspwm/polybar/modules
+    ~/.config/bspwm/polybar/system: bspwm/polybar/system
 
