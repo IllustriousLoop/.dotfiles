@@ -8,7 +8,7 @@
 - link:
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc 
+    ~/.zshrc: zshrc
 
     ~/.config/sxhkd/sxhkdrc: sxhkdrc
     ~/.config/bspwm/bspwmrc: bspwm/bspwmrc 
@@ -22,3 +22,6 @@
     ~/.config/bspwm/polybar/modules: bspwm/polybar/modules
     ~/.config/bspwm/polybar/system: bspwm/polybar/system
 
+    ~/.config/bspwm/alacritty/alacritty.yml: bspwm/alacritty/alacritty.yml 
+    ~/.config/bspwm/alacritty/colors.yml: bspwm/alacritty/colors.yml 
+    ~/.config/bspwm/alacritty/fonts.yml: bspwm/alacritty/fonts.yml 
