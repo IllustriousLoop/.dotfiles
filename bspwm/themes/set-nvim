@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+CFG="$HOME/.config"
+BSP="$HOME/.config/bspwm"
+THEME=""
+
+# colors for the theme in nvim directory 
+set_correct_names_to_colors() {
+	THEMES=$(cat "$BSP"/themes/${1} | grep : | cut -d '*' -f2 | sort -n)
+	i=0
+	tempColor=""
+	for color in $THEMES; do
+		if [ $((i%2)) != 0 ]; then
+			tempColor=$tempColor$'\n'$color
+		fi
+		i=$((i+1))
+	done
+	i=0
+	for tag in $(cat "$BSP"/themes/nvimTags ); do
+		j=0
+		for clr in $tempColor; do
+			if  (($i >= 18)); then
+				i=$j
+			fi
+			if [ $i -eq $j ]; then
+				THEME=$THEME$'\t'$tag' ="'$clr$'",\n'
+			fi
+			# echo $i'.'$tag' '$j'.'$clr
+			j=$((j+1))
+		done
+		i=$((i+1))
+	done
+	FILE_LUA=$'local colors = { \n'$THEME$'\n}\n\nreturn colors'
+	echo "$FILE_LUA" > "$CFG"/nvim/lua/themes/smart.lua
+}
+
+# color for the theme with the name of the theme
+cp $CFG/nvim/lua/chadrc.lua $CFG/nvim/lua/chadrc-backup.lua
+i=0
+for XT in $(cat $CFG/nvim/lua/chadrc.lua | grep "theme"); do
+	if [ $i -eq 2 ]; then
+		old=$(echo $XT | cut -d '"' -f2)
+		perl -pi -e 's/'$old'/'${1}'/g' $CFG/nvim/lua/chadrc.lua
+		break
+	fi
+	i=$((i+1))
+done
