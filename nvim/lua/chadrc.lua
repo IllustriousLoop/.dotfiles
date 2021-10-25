@@ -123,6 +123,15 @@ M.mappings = {
       close = "<S-x>", -- close a buffer with custom func in utils.lua
       cycleNext = "<TAB>", -- next buffer
       cyclePrev = "<S-Tab>", -- previous buffer
+      bufferOne = "<leader>1",
+      bufferTwo = "<leader>2",
+      bufferThree = "<leader>3",
+      bufferFour = "<leader>4",
+      bufferFive = "<leader>5",
+      bufferSix = "<leader>6",
+      bufferSeven = "<leader>7",
+      bufferEight = "<leader>8",
+      bufferNine = "<leader>9",
    },
    fugitive = {
       Git = "<leader>gs",

@@ -37,6 +37,7 @@ return packer.startup(function()
    use {
       "akinsho/nvim-bufferline.lua",
       disable = not plugin_status.nvim_bufferline,
+      requires = 'kyazdani42/nvim-web-devicons',
       after = "galaxyline.nvim",
       config = function()
          require "plugins.bufferline"
@@ -140,13 +141,12 @@ return packer.startup(function()
    -- file managing , picker etc
    use {
       "kyazdani42/nvim-tree.lua",
+      requires = 'kyazdani42/nvim-web-devicons',
       cmd = "NvimTreeToggle",
-      config = function()
-         require "plugins.nvimtree"
-      end,
+      config = function() require'nvim-tree'.setup {} end,
       setup = function()
          require("mappings").nvimtree()
-      end,
+      end, 
    }
 
    use {

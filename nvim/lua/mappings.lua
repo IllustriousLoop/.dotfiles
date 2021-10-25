@@ -109,6 +109,17 @@ M.bufferline = function()
 
    map("n", m.cycleNext, ":BufferLineCycleNext<CR>", opt)
    map("n", m.cyclePrev, ":BufferLineCyclePrev<CR>", opt)
+
+   --  move number of buffers
+   map("n", m.bufferOne, "<Cmd>BufferLineGoToBuffer 1<CR>", opt)
+   map("n", m.bufferTwo, "<Cmd>BufferLineGoToBuffer 2<CR>", opt)
+   map("n", m.bufferThree, "<Cmd>BufferLineGoToBuffer 3<CR>", opt)
+   map("n", m.bufferFour, "<Cmd>BufferLineGoToBuffer 4<CR>", opt)
+   map("n", m.bufferFive, "<Cmd>BufferLineGoToBuffer 5<CR>", opt)
+   map("n", m.bufferSix, "<Cmd>BufferLineGoToBuffer 6<CR>", opt)
+   map("n", m.bufferSeven, "<Cmd>BufferLineGoToBuffer 7<CR>", opt)
+   map("n", m.bufferEight, "<Cmd>BufferLineGoToBuffer 8<CR>", opt)
+   map("n", m.bufferNine, "<Cmd>BufferLineGoToBuffer 9<CR>", opt)
 end
 
 M.chadsheet = function()
