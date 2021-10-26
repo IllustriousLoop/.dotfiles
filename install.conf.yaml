@@ -5,6 +5,16 @@
 
 - clean: ["~"]
 
+- shell:
+  -
+    command: ./System/INSTALL_PACKAGES.sh
+    stdin: true
+    stdout: true
+    description: install programs
+    quiet: true
+  -
+    stderr: true
+
 - link:
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig

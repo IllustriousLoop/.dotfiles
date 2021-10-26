@@ -1,0 +1,14 @@
+git
+alacritty
+zsh
+curl
+logo-ls
+cowsay
+fzf
+gimp
+brave-bin
+neovim
+nvm
+obs-studio
+toilet
+vlc
