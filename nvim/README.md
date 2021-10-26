@@ -3,7 +3,7 @@
 Enter -> ``<CR>``
 
 | Mode Mapping | Command       | Description                     | Internal Command                                                                                                               |
-| ------------ | ------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| ------------ | :----: | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | n            | ``<C-A>``     | Copy all document               | ``:%y+<CR>``                                                                                                                   |
 | n            | ``<C-B>``     | scroll to top 36 lines          | ``<Cmd>lua require('neoscroll').scroll(-vim.api.nvim_win_get_height(0), true, 450)<CR>``                                       |
 | n            | ``<C-F>``     | scroll to down 36 lines         | ``<Cmd>lua require('neoscroll').scroll(vim.api.nvim_win_get_height(0), true, 450)<CR>``                                        |
@@ -76,48 +76,3 @@ Enter -> ``<CR>``
 | n            | ``zb``        | scroll to down                  | ``<Cmd>lua require('neoscroll').zb(250)<CR>``                                                                                  |
 | n            | ``zz``        | scroll to center                | ``<Cmd>lua require('neoscroll').zz(250)<CR>``                                                                                  |
 | x            | ``zz``        | scroll to center                | ``<Cmd>lua require('neoscroll').zz(250)<CR>``                                                                                  |
-```html
-n  <2-LeftMouse>   <Plug>(matchup-double-click)
-n  <Plug>(matchup-reload) * :<C-U>MatchupReload<CR>
-n  <Plug>(matchup-double-click) * :<C-U>call matchup#text_obj#double_click()<CR>
-o  <Plug>(matchup-a%) * :<C-U>call matchup#text_obj#delimited(0, 0, 'delim_all')<CR>
-o  <Plug>(matchup-i%) * :<C-U>call matchup#text_obj#delimited(1, 0, 'delim_all')<CR>
-x  <Plug>(matchup-a%) * :<C-U>call matchup#text_obj#delimited(0, 1, 'delim_all')<CR>
-x  <Plug>(matchup-i%) * :<C-U>call matchup#text_obj#delimited(1, 1, 'delim_all')<CR>
-o  <Plug>(matchup-z%) * :<C-U>call matchup#motion#op('z%')<CR>
-x  <Plug>(matchup-z%)   <SNR>60_(matchup-z%)
-x  <SNR>60_(matchup-z%) * :<C-U>call matchup#motion#jump_inside(1)<CR>
-n  <Plug>(matchup-z%) * :<C-U>call matchup#motion#jump_inside(0)<CR>
-o  <Plug>(matchup-[%) * :<C-U>call matchup#motion#op('[%')<CR>
-o  <Plug>(matchup-]%) * :<C-U>call matchup#motion#op(']%')<CR>
-x  <Plug>(matchup-[%)   <SNR>60_(matchup-[%)
-x  <Plug>(matchup-]%)   <SNR>60_(matchup-]%)
-x  <SNR>60_(matchup-[%) * :<C-U>call matchup#motion#find_unmatched(1, 0)<CR>
-x  <SNR>60_(matchup-]%) * :<C-U>call matchup#motion#find_unmatched(1, 1)<CR>
-n  <Plug>(matchup-[%) * :<C-U>call matchup#motion#find_unmatched(0, 0)<CR>
-n  <Plug>(matchup-]%) * :<C-U>call matchup#motion#find_unmatched(0, 1)<CR>
-o  <Plug>(matchup-g%) * :<C-U>call matchup#motion#op('g%')<CR>
-x  <Plug>(matchup-g%)   <SNR>60_(matchup-g%)
-x  <SNR>60_(matchup-g%) * :<C-U>call matchup#motion#find_matching_pair(1, 0)<CR>
-o  <Plug>(matchup-%) * :<C-U>call matchup#motion#op('%')<CR>
-x  <Plug>(matchup-%)   <SNR>60_(matchup-%)
-x  <SNR>60_(matchup-%) * :<C-U>call matchup#motion#find_matching_pair(1, 1)<CR>
-n  <Plug>(matchup-g%) * :<C-U>call matchup#motion#find_matching_pair(0, 0)<CR>
-nn  <Plug>(matchup-%) * :<C-U>call matchup#motion#find_matching_pair(0, 1)<CR>
-n  <SNR>60_(wise) * empty(g:v_motion_force) ? 'v' : g:v_motion_force
-n  <Plug>(matchup-hi-surround) * :<C-U>call matchup#matchparen#highlight_surrounding()<CR>
-n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR>
-n  <S-Tab>     * :BufferLineCyclePrev<CR>
-n  <Plug>(fzf-normal) * <Nop>
-n  <Plug>(fzf-insert) * i
-   <Up>        * v:count ? "k" : "gk"
-   <Down>      * v:count ? "j" : "gj"  <Plug>(matchup-%) * :<C-U>call matchup#motion#find_matching_pair(0, 1)<CR>
-n  <SNR>60_(wise) * empty(g:v_motion_force) ? 'v' : g:v_motion_force
-n  <Plug>(matchup-hi-surround) * :<C-U>call matchup#matchparen#highlight_surrounding()<CR>
-n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR>
-n  <S-Tab>     * :BufferLineCyclePrev<CR>
-n  <Plug>(fzf-normal) * <Nop>
-n  <Plug>(fzf-insert) * i
-   <Up>        * v:count ? "k" : "gk"
-   <Down>      * v:count ? "j" : "gj"
-```
