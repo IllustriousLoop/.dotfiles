@@ -13,8 +13,8 @@ yay -S $PACKAGES --noconfirm # Install list of all packages
 echo "packages installed"
 
 sudo mkdir /usr/share/fonts/TTF
-sudo mv $MAIN_PATH/fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf /usr/share/fonts/TTF/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf
-sudo mv $MAIN_PATH/fonts/Fira\ Code\ Regular\ Nerd\ Font\ Complete.ttf /usr/share/fonts/TTF/Fira\ Code\ Regular\ Nerd\ Font\ Complete.ttf
+sudo mv $MAIN_PATH/System/fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf /usr/share/fonts/TTF/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf
+sudo mv $MAIN_PATH/System/fonts/Fira\ Code\ Regular\ Nerd\ Font\ Complete.ttf /usr/share/fonts/TTF/Fira\ Code\ Regular\ Nerd\ Font\ Complete.ttf
 echo "fonts OK"
 
 echo "Insert password:"

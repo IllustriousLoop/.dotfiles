@@ -7,7 +7,7 @@
 
 - shell:
   -
-    command: ./System/INSTALL_PACKAGES.sh
+    command: ./System/Init.sh
     stdin: true
     stdout: true
     description: install programs
@@ -16,26 +16,16 @@
     stderr: true
 
 - link:
-    ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
+    ~/.config/picom/picom.conf: picom.conf
 
-    ~/.config/sxhkd/sxhkdrc: sxhkdrc
-    ~/.config/bspwm/bspwmrc: bspwm/bspwmrc 
-    ~/.config/bspwm/picom.conf: bspwm/picom.conf
-    ~/.config/bspwm/bin: bspwm/bin
-    ~/.config/bspwm/themes: bspwm/themes
-    ~/.config/bspwm/rofi/bin: bspwm/rofi/bin
-    ~/.config/bspwm/rofi/themes: bspwm/rofi/themes
-    ~/.config/bspwm/polybar/colors: bspwm/polybar/colors
-    ~/.config/bspwm/polybar/config: bspwm/polybar/config
-    ~/.config/bspwm/polybar/modules: bspwm/polybar/modules
-    ~/.config/bspwm/polybar/system: bspwm/polybar/system
+    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
+    ~/.config/alacritty/colors.yml: alacritty/colors.yml
+    ~/.config/alacritty/fonts.yml: alacritty/fonts.yml
 
-    ~/.config/bspwm/alacritty/alacritty.yml: bspwm/alacritty/alacritty.yml 
-    ~/.config/bspwm/alacritty/colors.yml: bspwm/alacritty/colors.yml 
-    ~/.config/bspwm/alacritty/fonts.yml: bspwm/alacritty/fonts.yml 
-    
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua: nvim/lua
     ~/.config/nvim/plugin: nvim/plugin
+    #require sudo
+    /usr/share/xournalpp/plugins/Shortcuts: xournal/Shortcuts
