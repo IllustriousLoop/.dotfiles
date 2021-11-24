@@ -27,5 +27,8 @@
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua: nvim/lua
     ~/.config/nvim/plugin: nvim/plugin
+
+    # ~/.config/i3/config: i3/config
+
     #require sudo
     /usr/share/xournalpp/plugins/Shortcuts: xournal/Shortcuts
