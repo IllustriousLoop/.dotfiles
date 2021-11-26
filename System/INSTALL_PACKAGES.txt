@@ -30,3 +30,5 @@ jdk-openjdk
 deepin-image-viewer
 deepin-movie
 yed
+visual-studio-code-bin
+noto-fonts-emoji
