@@ -30,5 +30,10 @@
 
     ~/.config/i3/config: i3/config
 
+    ~/.config/polybar/config: polybar/config
+    ~/.config/polybar/launch.sh: polybar/launch.sh
+    ~/.config/polybar/media_script.py: polybar/media_script.py
+    ~/.config/polybar/spotify_script.py: polybar/spotify_script.py
+
     #require sudo
     /usr/share/xournalpp/plugins/Shortcuts: xournal/Shortcuts
