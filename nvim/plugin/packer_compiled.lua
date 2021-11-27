@@ -75,7 +75,8 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = true,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/AutoSave.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/AutoSave.nvim",
+    url = "https://github.com/Pocco81/AutoSave.nvim"
   },
   LuaSnip = {
     config = { "\27LJ\1\2/\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\20plugins.luasnip\frequire\0" },
@@ -83,6 +84,7 @@ _G.packer_plugins = {
     needs_bufread = false,
     only_cond = false,
     path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip",
     wants = { "friendly-snippets" }
   },
   ["TrueZen.nvim"] = {
@@ -91,14 +93,16 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/TrueZen.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/TrueZen.nvim",
+    url = "https://github.com/Pocco81/TrueZen.nvim"
   },
   ["better-escape.vim"] = {
     config = { "\27LJ\1\2=\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\vescape\19plugins.others\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/better-escape.vim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/better-escape.vim",
+    url = "https://github.com/jdhao/better-escape.vim"
   },
   ["cheatsheet.nvim"] = {
     config = { "\27LJ\1\0021\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\22plugins.chadsheet\frequire\0" },
@@ -108,20 +112,23 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/cheatsheet.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/cheatsheet.nvim",
+    url = "https://github.com/sudormrfbin/cheatsheet.nvim"
   },
   ["dashboard-nvim"] = {
     commands = { "Dashboard", "DashboardNewFile", "DashboardJumpMarks", "SessionLoad", "SessionSave" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/dashboard-nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["friendly-snippets"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/friendly-snippets"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["galaxyline.nvim"] = {
     after = { "nvim-bufferline.lua" },
@@ -131,7 +138,8 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/galaxyline.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/galaxyline.nvim",
+    url = "https://github.com/glepnir/galaxyline.nvim"
   },
   ["gitsigns.nvim"] = {
     config = { "\27LJ\1\0020\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\21plugins.gitsigns\frequire\0" },
@@ -140,13 +148,15 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/gitsigns.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/indent-blankline.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lsp_signature.nvim"] = {
     config = { "\27LJ\1\2@\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\14signature\19plugins.others\frequire\0" },
@@ -155,28 +165,32 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/lsp_signature.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["lspkind-nvim"] = {
     config = { "\27LJ\1\2>\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\flspkind\19plugins.others\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/lspkind-nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
   neoformat = {
     commands = { "Neoformat" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/neoformat"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
   },
   ["neoscroll.nvim"] = {
     config = { "\27LJ\1\2@\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\14neoscroll\19plugins.others\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/neoscroll.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\1\0021\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\22plugins.autopairs\frequire\0" },
@@ -185,7 +199,8 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-autopairs"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-base16.lua"] = {
     after = { "nvim-web-devicons" },
@@ -195,7 +210,8 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-base16.lua"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-base16.lua",
+    url = "https://github.com/NvChad/nvim-base16.lua"
   },
   ["nvim-bufferline.lua"] = {
     after = { "plenary.nvim" },
@@ -205,14 +221,16 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-bufferline.lua"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-bufferline.lua",
+    url = "https://github.com/akinsho/nvim-bufferline.lua"
   },
   ["nvim-colorizer.lua"] = {
     config = { "\27LJ\1\2@\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\14colorizer\19plugins.others\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-colorizer.lua"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     commands = { "CommentToggle" },
@@ -220,7 +238,8 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-comment"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-compe"] = {
     after = { "nvim-autopairs" },
@@ -230,6 +249,7 @@ _G.packer_plugins = {
     needs_bufread = false,
     only_cond = false,
     path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-compe",
+    url = "https://github.com/hrsh7th/nvim-compe",
     wants = { "LuaSnip" }
   },
   ["nvim-lspconfig"] = {
@@ -240,14 +260,16 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-lspinstall"] = {
     after = { "nvim-lspconfig" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-lspinstall"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-lspinstall",
+    url = "https://github.com/kabouzeid/nvim-lspinstall"
   },
   ["nvim-tree.lua"] = {
     commands = { "NvimTreeToggle" },
@@ -255,14 +277,16 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-tree.lua"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     config = { "\27LJ\1\0022\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\23plugins.treesitter\frequire\0" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-treesitter"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     after = { "galaxyline.nvim" },
@@ -272,14 +296,16 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     after = { "nvim-base16.lua" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/packer.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     after = { "gitsigns.nvim", "telescope.nvim", "popup.nvim" },
@@ -288,7 +314,8 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/plenary.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     load_after = {
@@ -296,16 +323,19 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/popup.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     needs_bufread = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/telescope-media-files.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/telescope-media-files.nvim",
+    url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
   },
   ["telescope.nvim"] = {
     after = { "cheatsheet.nvim" },
@@ -315,21 +345,24 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = true,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/telescope.nvim"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-fugitive"] = {
     commands = { "Git" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/vim-fugitive"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-matchup"] = {
     after_files = { "/home/jhair/.local/share/nvim/site/pack/packer/opt/vim-matchup/after/plugin/matchit.vim" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/vim-matchup"
+    path = "/home/jhair/.local/share/nvim/site/pack/packer/opt/vim-matchup",
+    url = "https://github.com/andymass/vim-matchup"
   }
 }
 
